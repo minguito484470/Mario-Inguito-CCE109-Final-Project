@@ -55,8 +55,6 @@ public class Main {
 
 		double totalSummativeExamScore = CalculateSummativeExam(FirstSummativeScore, SecondSummativeScore, ThirdSummativeScore, FourthSummativeScore);
 		
-		
-
 		String outputDialogBody = 
 			"Student's ID: " + sstudentID + "\n" +
 			"Student's Name: " + capitalizeEachName(sfirstName) + " " + capitalizeEachName(slastName)+ "\n" + 
