@@ -8,7 +8,7 @@ public class Main {
 	
 	static double quiz1Score, quiz2Score, quiz3Score, quiz4Score, quiz5Score, quiz6Score, quiz7Score, quiz8Score;
 
-	static String sstudentID ,sfirstName, slastName,subject;
+	static String sstudentID ,sfirstName, slastName,subject,mario;
 	
 	public static String capitalizeEachName(String name) {
 		String firstLetter = name.substring(0, 1);
