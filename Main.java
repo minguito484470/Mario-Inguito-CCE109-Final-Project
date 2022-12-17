@@ -12,11 +12,11 @@ public class Main {
 	
 	public static String capitalizeEachName(String name) {
 		String firstLetter = name.substring(0, 1);
-	    String remainingLetters = name.substring(1, name.length());
-	    firstLetter = firstLetter.toUpperCase();
-	    remainingLetters = remainingLetters.toLowerCase();
-	    name = firstLetter + remainingLetters;
-	    return name;
+	    	String remainingLetters = name.substring(1, name.length());
+	    	firstLetter = firstLetter.toUpperCase();
+	    	remainingLetters = remainingLetters.toLowerCase();
+	    	name = firstLetter + remainingLetters;
+	    	return name;
 	}
 
 	public static double CalculateQuarterExam(double FirstQuarterScore, double SecondQuarterScore, double ThirdQuarterScore,double FourthQuarterScore) {
@@ -58,13 +58,13 @@ public class Main {
 		
 
 		String outputDialogBody = 
-								"Student's ID: " + sstudentID + "\n" +
-								"Student's Name: " + capitalizeEachName(sfirstName) + " " + capitalizeEachName(slastName)+ "\n" + 
-				 				"Subject: " + subject + "\n" + 
-								"Average Grade on Quizes: " + String.format("%.2f",totalQuizScore) + "\n" +
-						 		"Average Grade on Quarterly Exam: " + String.format("%.2f", totalQuarterExamScore) + "\n" + 
-						 		"Average Grade on Summative Exam: " + String.format("%.2f", totalSummativeExamScore) + "\n" + 
-						 		"Overall Total Grade: " + (String.format("%.2f", ((totalQuarterExamScore * .50) + (totalSummativeExamScore * .30) + (totalQuizScore * .20))));
+			"Student's ID: " + sstudentID + "\n" +
+			"Student's Name: " + capitalizeEachName(sfirstName) + " " + capitalizeEachName(slastName)+ "\n" + 
+			"Subject: " + subject + "\n" + 
+			"Average Grade on Quizes: " + String.format("%.2f",totalQuizScore) + "\n" +
+			"Average Grade on Quarterly Exam: " + String.format("%.2f", totalQuarterExamScore) + "\n" + 
+			"Average Grade on Summative Exam: " + String.format("%.2f", totalSummativeExamScore) + "\n" + 
+			"Overall Total Grade: " + (String.format("%.2f", ((totalQuarterExamScore * .50) + (totalSummativeExamScore * .30) + (totalQuizScore * .20))));
 		JOptionPane.showMessageDialog(null, outputDialogBody, capitalizeEachName(sfirstName) + "'s " + subject + " Total Grades", JOptionPane.PLAIN_MESSAGE);
 	}
 
