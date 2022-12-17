@@ -59,11 +59,11 @@ public class Main {
 			"Student's ID: " + sstudentID + "\n" +
 			"Student's Name: " + capitalizeEachName(sfirstName) + " " + capitalizeEachName(slastName)+ "\n" + 
 			"Subject: " + subject + "\n" + 
-			"Average Grade on Quizes: " + String.format("%.2f",totalQuizScore) + "\n" +
-			"Average Grade on Quarterly Exam: " + String.format("%.2f", totalQuarterExamScore) + "\n" + 
-			"Average Grade on Summative Exam: " + String.format("%.2f", totalSummativeExamScore) + "\n" + 
-			"Overall Total Grade: " + (String.format("%.2f", ((totalQuarterExamScore * .50) + (totalSummativeExamScore * .30) + (totalQuizScore * .20))));
-		JOptionPane.showMessageDialog(null, outputDialogBody, capitalizeEachName(sfirstName) + "'s " + subject + " Total Grades", JOptionPane.PLAIN_MESSAGE);
+			"\nAverage Grade on Quizes: " + String.format("%.2f",totalQuizScore) + "\n" +
+			"Average Grade on Quarterly Exams: " + String.format("%.2f", totalQuarterExamScore) + "\n" + 
+			"Average Grade on Summative Exams: " + String.format("%.2f", totalSummativeExamScore) + "\n" + 
+			"\nOverall Total Grade: " + (String.format("%.2f", ((totalQuarterExamScore * .50) + (totalSummativeExamScore * .30) + (totalQuizScore * .20)))) + "\n \n";
+		JOptionPane.showMessageDialog(null, outputDialogBody, capitalizeEachName(sfirstName) + "'s " + subject + " Subject Final Grade", JOptionPane.PLAIN_MESSAGE);
 	}
 
 	public static void summativeExam() {
@@ -72,14 +72,14 @@ public class Main {
 		JTextField ThirdSummative = new JTextField();
 		JTextField FourthSummative = new JTextField();
 
-		Object[] firstSummativeExam = { 
+		Object[] SummativeExam = { 
 				"Maximum score for each Summative Exam is 50. \n \n First Summative Exam:",FirstSummative, 
 				"Second Summative Exam:", SecondSummative, 
 				"Third Summative Exam:", ThirdSummative,
 				"Fourth Summative Exam:", FourthSummative };
 
 		while (true) {
-			int input = JOptionPane.showConfirmDialog(null, firstSummativeExam, "Enter Student's summative Exam Scores",
+			int input = JOptionPane.showConfirmDialog(null, SummativeExam, "Enter Student's Summative Exam Scores",
 					JOptionPane.OK_CANCEL_OPTION);
 			;
 			if (input == JOptionPane.OK_OPTION) {
@@ -151,7 +151,7 @@ public class Main {
 		JTextField quiz7 = new JTextField();
 		JTextField quiz8 = new JTextField();
 
-		Object[] firstSummativeExam = { 
+		Object[] SummativeExam = { 
 				 "Maximum score for each quizes is 20. \n \n " +
 				 "First Quiz:",quiz1, 
 				 "Second Quiz:",quiz2, 
@@ -164,7 +164,7 @@ public class Main {
 				};
 
 		while (true) {
-			int input = JOptionPane.showConfirmDialog(null, firstSummativeExam, "Enter Student's Quizes Scores",
+			int input = JOptionPane.showConfirmDialog(null, SummativeExam, "Enter Student's Quizes Scores",
 					JOptionPane.OK_CANCEL_OPTION);
 			;
 			if (input == JOptionPane.OK_OPTION) {
