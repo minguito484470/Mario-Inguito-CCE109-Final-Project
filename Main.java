@@ -177,7 +177,7 @@ public class Main {
 					quiz6Score = Double.parseDouble(quiz6.getText());
 					quiz7Score = Double.parseDouble(quiz7.getText());
 					quiz8Score = Double.parseDouble(quiz8.getText());
-					if (quiz1Score > 20 || quiz2Score > 50 || quiz3Score > 50 || quiz4Score > 50 || quiz5Score > 20 || quiz6Score > 50 || quiz7Score > 50 || quiz8Score > 50) {
+					if (quiz1Score > 20 || quiz2Score > 20 || quiz3Score > 20 || quiz4Score > 20 || quiz5Score > 20 || quiz6Score > 20 || quiz7Score > 20 || quiz8Score > 20) {
 						JOptionPane.showMessageDialog(null, "The maximum score for quiz exam is 20.");
 						continue;
 					}
